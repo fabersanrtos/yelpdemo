@@ -4,4 +4,6 @@ class Restaurant < ActiveRecord::Base
 
   has_many :reviews
 
+  validates :name, :address, :phone, :website, :image, presence: true
+
 end
