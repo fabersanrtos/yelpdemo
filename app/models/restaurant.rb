@@ -6,4 +6,6 @@ class Restaurant < ActiveRecord::Base
 
   validates :name, :address, :phone, :website, :image, presence: true
 
+  searchkick
+
 end
